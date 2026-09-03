@@ -5,6 +5,8 @@ class Solution {
         boolean oddcheck=false;
         boolean evencheck=false;
         for(int i=0;i<nums1.length;i++){
+            if(nums1[i]==1)
+            return true;
             if(!oddcheck &&nums1[i]%2!=0){
                 minOdd=nums1[i];
                 oddcheck=true;
